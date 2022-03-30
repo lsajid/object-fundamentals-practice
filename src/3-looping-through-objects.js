@@ -5,7 +5,7 @@
 //WE NEED TO KEEP TRACK OF WHICH ANIMALS EAT WHAT. LET'S USE THIS OBJECT CALLED "animalFoods".:
 const animalFoods = {
   capybara: "aquatic grass",
-  "fruit bat": "mango", //<- note that you CAN have keys that contain spaces, but they need to be wrapped in quotes. Any time you reference a key like this, you MUST use bracket notation: i.e. console.log(animalFoods["fruit bat"]).
+  "fruit bat": "mango", //<- note that you CAN have keys that contain spaces, but they need to be wrapped in quotes. Any time you reference a key that contains spaces, you MUST use bracket notation: i.e. console.log(animalFoods["fruit bat"]).
   chicken: "vegetables",
   cow: "grass",
   crow: "seeds",
