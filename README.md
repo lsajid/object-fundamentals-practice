@@ -51,7 +51,7 @@ npm test 2-deleting-properties
 ```
 
 ```
-npm test 3-nested-objects-practice
+npm test 3-looping-through-objects
 ```
 
 ```
