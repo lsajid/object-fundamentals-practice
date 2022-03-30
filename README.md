@@ -18,7 +18,11 @@ This repo contains some practice problems to improve your confidence level when 
 
 ## Instructions
 
-Complete each function inside of the `src/` folder. The comments and tests will help you determine what each function requires.
+Complete each file in the `src/` folder in order.
+
+Start each file by reading through the tutorial.
+
+Once you've finished working through the tutorial, complete each function in the file. The comments and tests will help you determine what each function requires.
 
 ### Tests
 
