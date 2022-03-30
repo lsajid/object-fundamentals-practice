@@ -20,14 +20,14 @@ delete cake.servings; //<- that's it! pretty easy! 😎
 console.log("after deleting the 'servings' property ->", cake);
 
 //PAUSE HERE AND RUN THIS FILE USING THE COMMAND "node src/2-deleting-existing-properties.js"
-//TAKE A LOOK AT THE TWO console.logs ON LINE 12 AND LINE 18.
-//NOTICE THAT WHEN THE "cake" OBJECT IS LOGGED ON LINE 18, IT NO LONGER HAS A "servings" PROPERTY!
+//TAKE A LOOK AT THE TWO console.logs ON LINE 14 AND LINE 20.
+//NOTICE THAT WHEN THE "cake" OBJECT IS LOGGED ON LINE 20, IT NO LONGER HAS A "servings" PROPERTY!
 
 //2️⃣ LET'S DELETE THE "layers" PROPERTY TOO.
 
 delete cake.layers;
 
-//TRY COMMENTING IN LINE 31 TO console.log THE "cake" OBJECT AGAIN AFTER DELETING ANOTHER KEY.
+//TRY COMMENTING IN LINE 32 TO console.log THE "cake" OBJECT AGAIN AFTER DELETING ANOTHER KEY.
 //THEN RUN THIS FILE AGAIN AND SEE THE MODIFIED "cake" OBJECT.
 // console.log("after deleting 'layers' key ->", cake); //👀
 
@@ -38,7 +38,7 @@ let propertyToDelete = "costInDollars";
 
 delete cake[propertyToDelete]; //<- not too hard! Just use brackets instead of dot notation to access a key using a variable!
 
-//TRY COMMENTING IN LINE 42 TO console.log THE "cake" OBJECT AGAIN AFTER DELETING ANOTHER PROPERTY.
+//TRY COMMENTING IN LINE 43 TO console.log THE "cake" OBJECT AGAIN AFTER DELETING ANOTHER PROPERTY.
 //THEN RUN THIS FILE AGAIN AND SEE THE MODIFIED "cake" OBJECT.
 // console.log("after deleting 'costInDollars' key ->", cake); //👀
 

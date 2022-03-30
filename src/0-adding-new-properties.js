@@ -23,14 +23,14 @@ dog.cute = true; //<--wow! easy! 😎
 console.log("after adding new key ->", dog);
 
 //PAUSE HERE AND RUN THIS FILE USING THE COMMAND "node src/0-adding-new-properties.js"
-//TAKE A LOOK AT THE TWO console.logs ON LINE 15 AND LINE 21.
-//NOTICE THAT WHEN THE "dog" OBJECT IS LOGGED ON LINE 21, IT HAS A NEW KEY THAT IT DIDN'T HAVE IN THE FIRST LOG FROM LINE 15!
+//TAKE A LOOK AT THE TWO console.logs ON LINE 17 AND LINE 23.
+//NOTICE THAT WHEN THE "dog" OBJECT IS LOGGED ON LINE 23, IT HAS A NEW KEY THAT IT DIDN'T HAVE IN THE FIRST LOG FROM LINE 17!
 
 //2️⃣ LET'S ADD ANOTHER KEY.
 
 dog.friends = ["Monkey", "Gumby", "Scout"];
 
-//TRY COMMENTING IN LINE 33 TO console.log THE "dog" OBJECT AGAIN AFTER THIS SECOND ADDITION.
+//TRY COMMENTING IN LINE 35 TO console.log THE "dog" OBJECT AGAIN AFTER THIS SECOND ADDITION.
 //THEN RUN THIS FILE AGAIN AND SEE THE NEW "friends" KEY ON THE "dog" OBJECT.
 // console.log("after adding 'friends' key ->", dog); //👀
 
@@ -42,7 +42,7 @@ let newValue = 9;
 
 dog[newKey] = newValue; //<- not too hard! Just use brackets instead of dot notation to add your new key using a variable!
 
-//TRY COMMENTING IN LINE 45 TO console.log THE "dog" OBJECT AGAIN AFTER THIS LAST ADDITION.
+//TRY COMMENTING IN LINE 47 TO console.log THE "dog" OBJECT AGAIN AFTER THIS LAST ADDITION.
 //THEN RUN THIS FILE AGAIN AND SEE THE NEW "age" KEY ON THE "dog" OBJECT.
 // console.log("after adding 'age' key ->", dog); //👀
 

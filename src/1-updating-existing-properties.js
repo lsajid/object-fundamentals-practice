@@ -19,14 +19,14 @@ city.population = 8_419_000; //<- cool! 😎
 console.log("after updating the 'population' key ->", city);
 
 //PAUSE HERE AND RUN THIS FILE USING THE COMMAND "node src/1-updating-existing-properties.js"
-//TAKE A LOOK AT THE TWO console.logs ON LINE 12 AND LINE 18.
-//NOTICE THAT WHEN THE "city" OBJECT IS LOGGED ON LINE 18, ITS "population" KEY HAS BEEN UPDATED!
+//TAKE A LOOK AT THE TWO console.logs ON LINE 13 AND LINE 19.
+//NOTICE THAT WHEN THE "city" OBJECT IS LOGGED ON LINE 19, ITS "population" KEY HAS BEEN UPDATED!
 
 //2️⃣ LET'S MAKE THE "size" KEY MORE ACCURATE TOO. NYC IS ACTUALLY A LITTLE BIGGER THAN 302 SQUARE MILES.
 
 city.sizeInSqMiles = 302.6;
 
-//TRY COMMENTING IN LINE 30 TO console.log THE "city" OBJECT AGAIN AFTER THIS SECOND UPDATE.
+//TRY COMMENTING IN LINE 31 TO console.log THE "city" OBJECT AGAIN AFTER THIS SECOND UPDATE.
 //THEN RUN THIS FILE AGAIN AND SEE THE UPDATED "size" PROPERTY ON THE "city" OBJECT.
 // console.log("after updating 'size' key ->", city); //👀
 
