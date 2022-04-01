@@ -55,7 +55,7 @@ npm test 3-looping-through-objects
 ```
 
 ```
-npm test 4-merge-objects
+npm test 4-merging-objects
 ```
 
 ### Run tests individually
