@@ -50,14 +50,14 @@ const vegetable = {
 //WE MERGE "fruit" AND "vegetable" into a single object called "tomato"? LET'S FIND OUT:
 
 const tomato = { ...fruit, ...vegetable };
-// console.log('...fruit, ...vegetable ->', tomato) 👀
+// console.log('...fruit, ...vegetable ->', tomato) //👀
 
 //COMMENT IN LINE 53. RUN THIS FILE AGAIN TO SEE WHAT OUR NEW "tomato" OBJECT LOOKS LIKE.
 //WHAT HAPPENED TO THE KEY CALLED "classification"?
 //WHAT IF WE WERE TO SWITCH THE ORDER THAT "fruit" AND "vegetable" GET SPREAD INTO THE "tomato" OBJECT?
 
 const tomato2 = { ...vegetable, fruit };
-// console.log('...vegetable, ...fruit ->', tomato) 👀
+// console.log('...vegetable, ...fruit ->', tomato) //👀
 
 //COMMENT IN LINE 60. RUN THE FILE AGAIN AND NOTICE WHAT THE "classification" KEY ENDS UP BEING SET TO.
 //💡 ORDER MATTERS IN THIS CASE. WHEN OBJECTS GETTING MERGED SHARE A KEY NAME, THE ONE THAT GETS ADDED
