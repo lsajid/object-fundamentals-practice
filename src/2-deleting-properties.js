@@ -13,6 +13,8 @@ const cake = {
 
 console.log("before deleting the 'servings' property->", cake);
 
+//<-----------------------------------Deleting a Property--------------------------------------------------->
+
 //1️⃣ I WANT TO DELETE THE "servings" PROPERTY.
 //LET'S SEE HOW TO DELETE THE "servings" PROPERTY ON THE "cake" OBJECT:
 delete cake.servings; //<- that's it! pretty easy! 😎
@@ -23,13 +25,17 @@ console.log("after deleting the 'servings' property ->", cake);
 //TAKE A LOOK AT THE TWO console.logs ON LINE 14 AND LINE 20.
 //NOTICE THAT WHEN THE "cake" OBJECT IS LOGGED ON LINE 20, IT NO LONGER HAS A "servings" PROPERTY!
 
+//<-----------------------------------Deleting Another Property--------------------------------------------------->
+
 //2️⃣ LET'S DELETE THE "layers" PROPERTY TOO.
 
 delete cake.layers;
 
-//TRY COMMENTING IN LINE 32 TO console.log THE "cake" OBJECT AGAIN AFTER DELETING ANOTHER KEY.
+//TRY COMMENTING IN LINE 36 TO console.log THE "cake" OBJECT AGAIN AFTER DELETING ANOTHER KEY.
 //THEN RUN THIS FILE AGAIN AND SEE THE MODIFIED "cake" OBJECT.
 // console.log("after deleting 'layers' key ->", cake); //👀
+
+//<-----------------------------------Using Bracket Notation--------------------------------------------------->
 
 //3️⃣ I WANT TO DELETE ONE MORE PROPERTY ON THIS OBJECT CALLED "cake".
 //THIS TIME I WANT TO DELETE THE PROPERTY BASED ON A VARIABLE.
@@ -38,13 +44,15 @@ let propertyToDelete = "costInDollars";
 
 delete cake[propertyToDelete]; //<- not too hard! Just use brackets instead of dot notation to access a key using a variable!
 
-//TRY COMMENTING IN LINE 43 TO console.log THE "cake" OBJECT AGAIN AFTER DELETING ANOTHER PROPERTY.
+//TRY COMMENTING IN LINE 49 TO console.log THE "cake" OBJECT AGAIN AFTER DELETING ANOTHER PROPERTY.
 //THEN RUN THIS FILE AGAIN AND SEE THE MODIFIED "cake" OBJECT.
 // console.log("after deleting 'costInDollars' key ->", cake); //👀
 
+//<-----------------------------------Your Turn--------------------------------------------------->
+
 //🍰 NOW IT'S YOUR TURN TO PRACTICE DELETING EXISTING PROPERTIES ON AN OBJECT.
 //COMPLETE THE THREE PRACTICE PROBLEMS BELOW...
-//❗️NOTE THAT YOU WILL HAVE TO ADD IN THE PARAMETER(S) YOURSELF
+//❗️NOTE THAT YOU WILL HAVE TO ADD IN THE PARAMETER(S) FOR EACH FUNCTION YOURSELF.
 
 /**
  *

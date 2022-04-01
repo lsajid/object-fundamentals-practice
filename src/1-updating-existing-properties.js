@@ -12,6 +12,8 @@ const city = {
 
 console.log("before updating ->", city);
 
+//<-----------------------------------Updating a Value--------------------------------------------------->
+
 //1️⃣ I WANT TO UPDATE THE "population" KEY TO BE MORE EXACT. 8 MILLION IS ACTUALLY TOO LOW.
 //LET'S SEE HOW TO UPDATE THAT KEY TO BE MORE ACCURATE:
 city.population = 8_419_000; //<- cool! 😎
@@ -22,13 +24,17 @@ console.log("after updating the 'population' key ->", city);
 //TAKE A LOOK AT THE TWO console.logs ON LINE 13 AND LINE 19.
 //NOTICE THAT WHEN THE "city" OBJECT IS LOGGED ON LINE 19, ITS "population" KEY HAS BEEN UPDATED!
 
+//<-----------------------------------Updating Another Value--------------------------------------------------->
+
 //2️⃣ LET'S MAKE THE "size" KEY MORE ACCURATE TOO. NYC IS ACTUALLY A LITTLE BIGGER THAN 302 SQUARE MILES.
 
 city.sizeInSqMiles = 302.6;
 
-//TRY COMMENTING IN LINE 31 TO console.log THE "city" OBJECT AGAIN AFTER THIS SECOND UPDATE.
+//TRY COMMENTING IN LINE 35 TO console.log THE "city" OBJECT AGAIN AFTER THIS SECOND UPDATE.
 //THEN RUN THIS FILE AGAIN AND SEE THE UPDATED "size" PROPERTY ON THE "city" OBJECT.
 // console.log("after updating 'size' key ->", city); //👀
+
+//<-----------------------------------Using Bracket Notation--------------------------------------------------->
 
 //3️⃣ I WANT TO UPDATE ONE MORE PROPERTY ON THIS OBJECT CALLED "city".
 //THIS TIME I WANT TO UPDATE THE KEY AND VALUE BASED ON VARIABLES.
@@ -38,13 +44,15 @@ let updatedValue = "New York";
 
 city[keyToUpdate] = updatedValue; //<- not too hard! Just use brackets instead of dot notation to access a key using a variable!
 
-//TRY COMMENTING IN LINE 43 TO console.log THE "city" OBJECT AGAIN AFTER THIS LAST UPDATE.
+//TRY COMMENTING IN LINE 49 TO console.log THE "city" OBJECT AGAIN AFTER THIS LAST UPDATE.
 //THEN RUN THIS FILE AGAIN AND SEE THE UPDATED "state" KEY ON THE "city" OBJECT.
 // console.log("after updating 'state' key ->", city); //👀
 
+//<-----------------------------------Your Turn--------------------------------------------------->
+
 //🌇 NOW IT'S YOUR TURN TO PRACTICE UPDATING EXISTING PROPERTIES ON AN OBJECT.
 //COMPLETE THE THREE PRACTICE PROBLEMS BELOW...
-//❗️NOTE THAT YOU WILL HAVE TO ADD IN THE PARAMETER(S) YOURSELF
+//❗️NOTE THAT YOU WILL HAVE TO ADD IN THE PARAMETER(S) FOR EACH FUNCTION YOURSELF.
 
 /**
  *

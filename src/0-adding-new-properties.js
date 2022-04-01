@@ -16,6 +16,8 @@ const dog = {
 
 console.log("before adding new key ->", dog);
 
+//<-----------------------------------Adding a Key To an Object--------------------------------------------------->
+
 //1️⃣ I WANT TO ADD SOME NEW PROPERTIES TO THIS OBJECT CALLED "dog".
 //I WANT TO ADD A KEY OF "cute" AND SET IT TO "true". LET'S SEE HOW TO DO THAT:
 dog.cute = true; //<--wow! easy! 😎
@@ -26,6 +28,8 @@ console.log("after adding new key ->", dog);
 //TAKE A LOOK AT THE TWO console.logs ON LINE 17 AND LINE 23.
 //NOTICE THAT WHEN THE "dog" OBJECT IS LOGGED ON LINE 23, IT HAS A NEW KEY THAT IT DIDN'T HAVE IN THE FIRST LOG FROM LINE 17!
 
+//<-----------------------------------Adding Another Key--------------------------------------------------->
+
 //2️⃣ LET'S ADD ANOTHER KEY.
 
 dog.friends = ["Monkey", "Gumby", "Scout"];
@@ -33,6 +37,8 @@ dog.friends = ["Monkey", "Gumby", "Scout"];
 //TRY COMMENTING IN LINE 35 TO console.log THE "dog" OBJECT AGAIN AFTER THIS SECOND ADDITION.
 //THEN RUN THIS FILE AGAIN AND SEE THE NEW "friends" KEY ON THE "dog" OBJECT.
 // console.log("after adding 'friends' key ->", dog); //👀
+
+//<-----------------------------------Using Bracket Notation--------------------------------------------------->
 
 //3️⃣ I WANT TO ADD ONE MORE KEY TO THIS OBJECT CALLED "dog".
 //THIS TIME I WANT TO ADD THE KEY AND VALUE BASED ON VARIABLES.
@@ -46,9 +52,11 @@ dog[newKey] = newValue; //<- not too hard! Just use brackets instead of dot nota
 //THEN RUN THIS FILE AGAIN AND SEE THE NEW "age" KEY ON THE "dog" OBJECT.
 // console.log("after adding 'age' key ->", dog); //👀
 
+//<-----------------------------------Your Turn--------------------------------------------------->
+
 //🐶 NOW IT'S YOUR TURN TO PRACTICE ADDING NEW KEY/VALUE PAIRS TO AN EXISTING OBJECT.
 //COMPLETE THE THREE PRACTICE PROBLEMS BELOW...
-//❗️NOTE THAT YOU WILL HAVE TO ADD IN THE PARAMETER(S) YOURSELF
+//❗️NOTE THAT YOU WILL HAVE TO ADD IN THE PARAMETER(S) FOR EACH FUNCTION YOURSELF.
 
 /**
  *

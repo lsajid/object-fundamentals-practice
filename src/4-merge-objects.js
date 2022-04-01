@@ -1,2 +1,0 @@
-//WHAT IF THERE ARE DUPLICATE KEYS?
-//Object.assign()

@@ -13,15 +13,19 @@ const animalFoods = {
   "mantis shrimp": "clams",
 };
 
+//<-----------------------------------Object.keys, values, and entries--------------------------------------------------->
+
 //0️⃣ BEFORE WE BEGIN THE TUTORIAL, I WANT TO TALK ABOUT 🔑Object.keys()🔑, 💎Object.values()💎, and 🔐Object.entries()🔐:
 //Object.keys() ACCESSES JUST THE KEYS OF AN OBJECT AND STORES THEM IN AN ARRAY. IT'S THE MOST USEFUL AND COMMONLY USED OF THE THREE, SO WE'LL FOCUS ON THIS ONE IN THE FOLLOWING TUTORIAL.
 //Object.values() ACCESSES JUST THE VALUES AND STORES THEM IN AN ARRAY.
 //Object.entries() ACCESSES BOTH AND STORES EACH KEY/VALUE PAIR INSIDE OF A SUBARRAY WITHIN A LARGER ARRAY.
-//TRY COMMENTING IN LINES 21, 22, AND 23, TO SEE HOW THEY LOOK WHEN USED ON THE "animalFoods" OBJECT.
+//TRY COMMENTING IN LINES 23, 24, AND 25, TO SEE HOW THEY LOOK WHEN USED ON THE "animalFoods" OBJECT.
 // console.log("keys: ", Object.keys(animalFoods)); //👀
 // console.log("values: ", Object.values(animalFoods)); //👀
 // console.log("entries: ", Object.entries(animalFoods)); //👀
 // ^ COMMENT THESE BACK OUT WHEN YOU'RE DONE ^
+
+//<-----------------------------------Looping Using Object.keys and for...of--------------------------------------------------->
 
 //1️⃣ OKAY, NOW ONTO THE TUTORIAL: I WANT TO MODIFY THE VALUES IN MY "animalFoods" OBJECT WHOSE KEYS MEET A CERTAIN CONDITION.
 //TO DO THIS, WE'LL HAVE TO LOOP THROUGH THE KEYS. WE CAN USE A for...of LOOP AND 🔑Object.keys()🔑!
@@ -41,8 +45,10 @@ for (let animalName of Object.keys(animalFoods)) {
 // );  //👀
 
 //PAUSE HERE AND RUN THIS FILE USING THE COMMAND "node src/3-looping-through-objects.js"
-//COMMENT IN AND TAKE A LOOK AT THE TWO console.logs ON LINE 29 AND LINE 38.
-//NOTICE THAT WHEN THE "animalFoods" OBJECT IS LOGGED ON LINE 38, EVERY ANIMAL WHOSE NAME BEGINS WITH A "c" HAS BEEN MODIFIED!
+//COMMENT IN AND TAKE A LOOK AT THE TWO console.logs ON LINE 33 AND LINE 42.
+//NOTICE THAT WHEN THE "animalFoods" OBJECT IS LOGGED ON LINE 42, EVERY ANIMAL WHOSE NAME BEGINS WITH A "c" HAS BEEN MODIFIED!
+
+//<-----------------------------------Looping Using for...in--------------------------------------------------->
 
 //2️⃣ THERE'S ANOTHER WAY THAT WE CAN LOOP THROUGH AN OBJECT'S KEYS.
 //INSTEAD OF USING A for...of LOOP WITH 🔑Object.keys()🔑, WE CAN JUST USE WHAT'S CALLED A for...in LOOP!
@@ -55,9 +61,11 @@ for (let animalName in animalFoods) {
   }
 }
 
-//TRY COMMENTING IN LINE 60 TO console.log THE "animalFoods" OBJECT AGAIN AFTER MAKING THIS SECOND CHANGE.
+//TRY COMMENTING IN LINE 66 TO console.log THE "animalFoods" OBJECT AGAIN AFTER MAKING THIS SECOND CHANGE.
 //THEN RUN THIS FILE AGAIN AND SEE THE MODIFIED "animalFoods" OBJECT.
 // console.log("after marking non-'c' animals with '!!!' ->", animalFoods); //👀
+
+//<-----------------------------------Closer Look at Accessing Values--------------------------------------------------->
 
 //3️⃣ I WANT TO MAKE ONE MORE CHANGE TO THIS OBJECT CALLED "animalFoods".
 //THIS TIME I WANT TO CHECK THE ~VALUES~ FOR A CERTAIN CONDITION, NOT THE KEYS.
@@ -70,13 +78,13 @@ for (let animalName in animalFoods) {
   }
 }
 
-//TRY COMMENTING IN LINE 75 TO console.log THE "animalFoods" OBJECT AGAIN AFTER MAKING THIS MOST RECENT CHANGE.
+//TRY COMMENTING IN LINE 83 TO console.log THE "animalFoods" OBJECT AGAIN AFTER MAKING THIS MOST RECENT CHANGE.
 //THEN RUN THIS FILE AGAIN AND SEE THE MODIFIED "animalFoods" OBJECT.
 // console.log("after modifying based on VALUES containing 'o' ->", animalFoods); //👀
 
 //🐮 NOW IT'S YOUR TURN TO PRACTICE LOOPING THROUGH THE KEYS OF AN OBJECT.
 //COMPLETE THE THREE PRACTICE PROBLEMS BELOW...
-//❗️NOTE THAT YOU WILL HAVE TO ADD IN THE PARAMETER(S) YOURSELF
+//❗️NOTE THAT YOU WILL HAVE TO ADD IN THE PARAMETER(S) FOR EACH FUNCTION YOURSELF.
 
 /**
  *
@@ -169,7 +177,7 @@ function deleteIfKeyContainsChar() {}
  * markIfValueContainsChar({aardvark: "termites", donkey: "oat straw", parrot: "fruit"}, "a")
  * > {
  *   aardvark: "termites",
- *   donkey: "oat straw!!!"
+ *   donkey: "oat straw!!!",
  *   parrot: "fruit"
  *   }
  *
