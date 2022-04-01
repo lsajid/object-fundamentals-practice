@@ -50,14 +50,14 @@ const vegetable = {
 //WE MERGE "fruit" AND "vegetable" into a single object called "tomato"? LET'S FIND OUT:
 
 const tomato = { ...fruit, ...vegetable };
-// console.log('...fruit, ...vegetable ->', tomato) //👀
+// console.log("...fruit, ...vegetable ->", tomato); //👀
 
 //COMMENT IN LINE 53. RUN THIS FILE AGAIN TO SEE WHAT OUR NEW "tomato" OBJECT LOOKS LIKE.
 //WHAT HAPPENED TO THE KEY CALLED "classification"?
 //WHAT IF WE WERE TO SWITCH THE ORDER THAT "fruit" AND "vegetable" GET SPREAD INTO THE "tomato" OBJECT?
 
-const tomato2 = { ...vegetable, fruit };
-// console.log('...vegetable, ...fruit ->', tomato) //👀
+const tomato2 = { ...vegetable, ...fruit };
+// console.log("...vegetable, ...fruit ->", tomato2); //👀
 
 //COMMENT IN LINE 60. RUN THE FILE AGAIN AND NOTICE WHAT THE "classification" KEY ENDS UP BEING SET TO.
 //💡 ORDER MATTERS IN THIS CASE. WHEN OBJECTS GETTING MERGED SHARE A KEY NAME, THE ONE THAT GETS ADDED
@@ -67,7 +67,7 @@ const tomato2 = { ...vegetable, fruit };
 
 //3️⃣ ANOTHER WAY OF MERGING OBJECTS IS USING THE Object.assign() METHOD:
 const tomato3 = Object.assign(fruit, vegetable);
-// console.log("make tomato using Object.assign() ->", tomato2) //👀
+// console.log("make tomato using Object.assign() ->", tomato3); //👀
 
 //COMMENT IN LINE 70, THEN RUN THE FILE TO SEE THE RESULT OF USING Object.assign()
 //ORDER MATTERS WHEN USING Object.assign() TOO.
