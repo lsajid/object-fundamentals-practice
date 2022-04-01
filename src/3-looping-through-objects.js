@@ -44,8 +44,8 @@ for (let animalName of Object.keys(animalFoods)) {
 //   animalFoods
 // ); //👀
 
-//PAUSE HERE AND RUN THIS FILE USING THE COMMAND "node src/3-looping-through-objects.js"
 //COMMENT IN AND TAKE A LOOK AT THE TWO console.logs ON LINE 33 AND LINE 42-45.
+//PAUSE HERE AND RUN THIS FILE USING THE COMMAND "node src/3-looping-through-objects.js"
 //NOTICE THAT WHEN THE "animalFoods" OBJECT IS LOGGED ON LINE 42, EVERY ANIMAL WHOSE NAME BEGINS WITH A "c" HAS BEEN MODIFIED!
 
 //<-----------------------------------Looping Using for...in--------------------------------------------------->
