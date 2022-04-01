@@ -34,7 +34,7 @@ console.log("after adding new key ->", dog);
 
 dog.friends = ["Monkey", "Gumby", "Scout"];
 
-//TRY COMMENTING IN LINE 35 TO console.log THE "dog" OBJECT AGAIN AFTER THIS SECOND ADDITION.
+//TRY COMMENTING IN LINE 39 TO console.log THE "dog" OBJECT AGAIN AFTER THIS SECOND ADDITION.
 //THEN RUN THIS FILE AGAIN AND SEE THE NEW "friends" KEY ON THE "dog" OBJECT.
 // console.log("after adding 'friends' key ->", dog); //👀
 
@@ -48,7 +48,7 @@ let newValue = 9;
 
 dog[newKey] = newValue; //<- not too hard! Just use brackets instead of dot notation to add your new key using a variable!
 
-//TRY COMMENTING IN LINE 47 TO console.log THE "dog" OBJECT AGAIN AFTER THIS LAST ADDITION.
+//TRY COMMENTING IN LINE 53 TO console.log THE "dog" OBJECT AGAIN AFTER THIS LAST ADDITION.
 //THEN RUN THIS FILE AGAIN AND SEE THE NEW "age" KEY ON THE "dog" OBJECT.
 // console.log("after adding 'age' key ->", dog); //👀
 
