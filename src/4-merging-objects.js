@@ -24,7 +24,7 @@ const employee = { ...person, ...job };
 console.log("newly merged 'employee' object ->", employee);
 
 //PAUSE HERE AND RUN THIS FILE USING THE COMMAND "node src/4-merge-objects.js"
-//TAKE A LOOK AT THE console.log ON LINE 22
+//TAKE A LOOK AT THE console.log ON LINE 24
 //NOTICE THAT THIS NEW "employee" OBJECT HAS ALL OF THE PROPERTIES FROM BOTH "person" AND "job".
 
 //<-----------------------------------Overriding Keys--------------------------------------------------->
