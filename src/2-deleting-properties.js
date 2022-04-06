@@ -11,7 +11,7 @@ const cake = {
   costInDollars: 70,
 };
 
-console.log("before deleting the 'servings' property->", cake);
+// console.log("before deleting the 'servings' property->", cake);
 
 //<-----------------------------------Deleting a Property--------------------------------------------------->
 
@@ -19,7 +19,7 @@ console.log("before deleting the 'servings' property->", cake);
 //LET'S SEE HOW TO DELETE THE "servings" PROPERTY ON THE "cake" OBJECT:
 delete cake.servings; //<- that's it! pretty easy! 😎
 
-console.log("after deleting the 'servings' property ->", cake);
+// console.log("after deleting the 'servings' property ->", cake);
 
 //PAUSE HERE AND RUN THIS FILE USING THE COMMAND "node src/2-deleting-existing-properties.js"
 //TAKE A LOOK AT THE TWO console.logs ON LINE 14 AND LINE 20.
@@ -33,7 +33,7 @@ delete cake.layers;
 
 //TRY COMMENTING IN LINE 36 TO console.log THE "cake" OBJECT AGAIN AFTER DELETING ANOTHER KEY.
 //THEN RUN THIS FILE AGAIN AND SEE THE MODIFIED "cake" OBJECT.
-// console.log("after deleting 'layers' key ->", cake); //👀
+ //console.log("after deleting 'layers' key ->", cake); //👀
 
 //<-----------------------------------Using Bracket Notation--------------------------------------------------->
 
@@ -46,7 +46,7 @@ delete cake[propertyToDelete]; //<- not too hard! Just use brackets instead of d
 
 //TRY COMMENTING IN LINE 49 TO console.log THE "cake" OBJECT AGAIN AFTER DELETING ANOTHER PROPERTY.
 //THEN RUN THIS FILE AGAIN AND SEE THE MODIFIED "cake" OBJECT.
-// console.log("after deleting 'costInDollars' key ->", cake); //👀
+ //console.log("after deleting 'costInDollars' key ->", cake); //👀
 
 //<-----------------------------------Your Turn--------------------------------------------------->
 
@@ -86,7 +86,10 @@ delete cake[propertyToDelete]; //<- not too hard! Just use brackets instead of d
  *   }
  *
  */
-function deleteSprinklesProperty() {}
+function deleteSprinklesProperty(obj) {
+  delete obj.sprinkles;
+  return obj;
+}
 
 /**
  *
@@ -121,7 +124,10 @@ function deleteSprinklesProperty() {}
  *   }
  *
  */
-function deleteInputtedProperty() {}
+function deleteInputtedProperty(obj, key) {
+  delete obj[key];
+  return obj;
+}
 
 /**
  *
@@ -160,7 +166,10 @@ function deleteInputtedProperty() {}
  *   }
  *
  */
-function deleteAnyProperty() {}
+function deleteAnyProperty(obj) {
+  delete obj.cakeFlavor;
+  return obj;
+}
 
 module.exports = {
   deleteSprinklesProperty,
