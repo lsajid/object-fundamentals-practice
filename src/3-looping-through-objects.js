@@ -13,6 +13,7 @@ const animalFoods = {
   "mantis shrimp": "clams",
 };
 
+
 //<-----------------------------------Object.keys, values, and entries--------------------------------------------------->
 
 //0️⃣ BEFORE WE BEGIN THE TUTORIAL, I WANT TO TALK ABOUT 🔑Object.keys()🔑, 💎Object.values()💎, and 🔐Object.entries()🔐:
@@ -120,8 +121,42 @@ for (let animalName in animalFoods) {
  *   capybara: 8
  *   }
  *
+ * 
+ * for (let animalName in animalFoods) {
+  if (animalName[0] !== "c") {
+    animalFoods[animalName] += "!!!"; //<- adding this string onto the existing value
+  }
+}
+
+let secretLetter = "o"; //if any animals' foods (so the VALUE, not the KEY) contain this secret letter, we'll mark them by adding an "⚽️" to the end.
+
+for (let animalName in animalFoods) {
+  if (animalFoods[animalName].includes(secretLetter)) {
+    animalFoods[animalName] += "⚽️";
+  }
+}
+ * 
  */
-function doubleBasedOnKey() {}
+function doubleBasedOnKey(pets) {
+  for(let singlePetName in pets){
+    if(singlePetName[0] === "c"){
+      if(typeof pets[singlePetName] === "string"){
+        console.log(singlePetName, pets[singlePetName])
+        pets[singlePetName] = pets[singlePetName] + pets[singlePetName];
+      }else{
+        pets[singlePetName] = pets[singlePetName] * 2;
+      }
+    }
+  }
+  return pets;
+}
+// doubleBasedOnKey({
+//   fish: 10,
+//   bunny: 2,
+//   capybara: 4
+// })
+// doubleBasedOnKey({dog: "steak", cat: "chicken"})
+
 
 /**
  *
@@ -156,10 +191,20 @@ function doubleBasedOnKey() {}
  *   }
  *
  */
-function deleteIfKeyContainsChar() {}
+function deleteIfKeyContainsChar(object, secretLetter) {
+  for(let key in object){
+    if(key.includes(secretLetter)){
+      delete object[key];
+    }
+  }
+  return object;
+}
+deleteIfKeyContainsChar({aardvark: "termites", donkey: "oat straw", parrot: "fruit"}, "a");
+//console.log(deleteIfKeyContainsChar({aardvark: "termites", donkey: "oat straw", parrot: "fruit"}, "a"))
+deleteIfKeyContainsChar({gerbil: "ice cream", ferret: "raw meat", cockatiel: "pellets"}, "r");
+
 
 /**
- *
  *
  * * the purpose of this exercise is to practice modifying object values based on whether or not
  * * the value itself meets a certain condition.
@@ -195,7 +240,20 @@ function deleteIfKeyContainsChar() {}
  *   }
  *
  */
-function markIfValueContainsChar() {}
+function markIfValueContainsChar(object, secretLetter) {
+  for(let key in object){
+    console.log(key);
+    console.log(object[key]);
+    if(object[key].includes(secretLetter)){
+      //console.log(secretLetter,object[key])
+      object[key] += "!!!"
+    }
+  }
+  return object;
+}
+markIfValueContainsChar({aardvark: "termites", donkey: "oat straw", parrot: "fruit"}, "a")
+markIfValueContainsChar({gerbil: "ice cream", ferret: "raw meat", cockatiel: "pellets"}, "r")
+
 
 module.exports = {
   doubleBasedOnKey,
