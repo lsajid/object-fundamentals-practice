@@ -10,7 +10,7 @@ const city = {
   sizeInSqMiles: 302,
 };
 
-console.log("before updating ->", city);
+// console.log("before updating ->", city);
 
 //<-----------------------------------Updating a Value--------------------------------------------------->
 
@@ -18,7 +18,7 @@ console.log("before updating ->", city);
 //LET'S SEE HOW TO UPDATE THAT KEY TO BE MORE ACCURATE:
 city.population = 8_419_000; //<- cool! 😎
 
-console.log("after updating the 'population' key ->", city);
+// console.log("after updating the 'population' key ->", city);
 
 //PAUSE HERE AND RUN THIS FILE USING THE COMMAND "node src/1-updating-existing-properties.js"
 //TAKE A LOOK AT THE TWO console.logs ON LINE 13 AND LINE 19.
@@ -85,7 +85,10 @@ city[keyToUpdate] = updatedValue; //<- not too hard! Just use brackets instead o
  *   }
  *
  */
-function updateVisitedProperty() {}
+function updateVisitedProperty(obj) {
+  obj.visited = true;
+  return obj;
+}
 
 /**
  *
@@ -120,7 +123,10 @@ function updateVisitedProperty() {}
  *   }
  *
  */
-function updateInputtedProperty() {}
+function updateInputtedProperty(obj, key, value) {
+  obj[key]=value;
+  return obj;
+}
 
 /**
  *
@@ -162,7 +168,10 @@ function updateInputtedProperty() {}
  *   }
  *
  */
-function updateAnyProperty() {}
+function updateAnyProperty(obj) {
+  obj.name = "corndog";
+  return obj;
+}
 
 module.exports = {
   updateVisitedProperty,
