@@ -21,7 +21,7 @@ const job = {
 //LET'S SEE HOW TO USE THE spread operator TO MERGE THE "person" AND "job" OBJECTS INTO A SINGLE OBJECT CALLED "employee".
 const employee = { ...person, ...job };
 
-console.log("newly merged 'employee' object ->", employee);
+// console.log("newly merged 'employee' object ->", employee);
 
 //PAUSE HERE AND RUN THIS FILE USING THE COMMAND "node src/4-merge-objects.js"
 //TAKE A LOOK AT THE console.log ON LINE 24
@@ -57,7 +57,7 @@ const tomato = { ...fruit, ...vegetable };
 //WHAT IF WE WERE TO SWITCH THE ORDER THAT "fruit" AND "vegetable" GET SPREAD INTO THE "tomato" OBJECT?
 
 const tomato2 = { ...vegetable, ...fruit };
-// console.log("...vegetable, ...fruit ->", tomato2); //👀
+// console.log("tomato twoo", "...vegetable, ...fruit ->", tomato2); //👀
 
 //COMMENT IN LINE 60. RUN THE FILE AGAIN AND NOTICE WHAT THE "classification" KEY ENDS UP BEING SET TO.
 //💡 ORDER MATTERS IN THIS CASE. WHEN OBJECTS GETTING MERGED SHARE A KEY NAME, THE ONE THAT GETS ADDED
@@ -67,7 +67,7 @@ const tomato2 = { ...vegetable, ...fruit };
 
 //3️⃣ ANOTHER WAY OF MERGING OBJECTS IS USING THE Object.assign() METHOD:
 const tomato3 = Object.assign(fruit, vegetable);
-// console.log("make tomato using Object.assign() ->", tomato3); //👀
+console.log("make tomato using Object.assign() ->", tomato3); //👀
 
 //COMMENT IN LINE 70, THEN RUN THE FILE TO SEE THE RESULT OF USING Object.assign()
 //ORDER MATTERS WHEN USING Object.assign() TOO.
@@ -115,7 +115,9 @@ const tomato3 = Object.assign(fruit, vegetable);
  *   }
  *
  */
-function combineUsingSpread() {}
+function combineUsingSpread(object1, object2) {
+  return {...object1, ...object2};
+}
 
 /**
  *
@@ -155,7 +157,10 @@ function combineUsingSpread() {}
  *   }
  *
  */
-function combineUsingAssign() {}
+function combineUsingAssign(object1, object2) {
+  let mergedObject = Object.assign(object1, object2);
+  return mergedObject;
+}
 
 module.exports = {
   combineUsingSpread,
