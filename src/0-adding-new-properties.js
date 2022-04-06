@@ -14,7 +14,7 @@ const dog = {
   favoriteToy: "Lambchop",
 };
 
-console.log("before adding new key ->", dog);
+//console.log("before adding new key ->", dog);
 
 //<-----------------------------------Adding a Key To an Object--------------------------------------------------->
 
@@ -22,7 +22,7 @@ console.log("before adding new key ->", dog);
 //I WANT TO ADD A KEY OF "cute" AND SET IT TO "true". LET'S SEE HOW TO DO THAT:
 dog.cute = true; //<--wow! easy! 😎
 
-console.log("after adding new key ->", dog);
+//console.log("after adding new key ->", dog);
 
 //PAUSE HERE AND RUN THIS FILE USING THE COMMAND "node src/0-adding-new-properties.js"
 //TAKE A LOOK AT THE TWO console.logs ON LINE 17 AND LINE 23.
@@ -36,7 +36,7 @@ dog.friends = ["Monkey", "Gumby", "Scout"];
 
 //TRY COMMENTING IN LINE 39 TO console.log THE "dog" OBJECT AGAIN AFTER THIS SECOND ADDITION.
 //THEN RUN THIS FILE AGAIN AND SEE THE NEW "friends" KEY ON THE "dog" OBJECT.
-// console.log("after adding 'friends' key ->", dog); //👀
+ //console.log("after adding 'friends' key ->", dog); //👀
 
 //<-----------------------------------Using Bracket Notation--------------------------------------------------->
 
@@ -50,7 +50,7 @@ dog[newKey] = newValue; //<- not too hard! Just use brackets instead of dot nota
 
 //TRY COMMENTING IN LINE 53 TO console.log THE "dog" OBJECT AGAIN AFTER THIS LAST ADDITION.
 //THEN RUN THIS FILE AGAIN AND SEE THE NEW "age" KEY ON THE "dog" OBJECT.
-// console.log("after adding 'age' key ->", dog); //👀
+console.log("after adding 'age' key ->", dog); //👀
 
 //<-----------------------------------Your Turn--------------------------------------------------->
 
@@ -90,7 +90,10 @@ dog[newKey] = newValue; //<- not too hard! Just use brackets instead of dot nota
  *   }
  *
  */
-function addCuteProperty() {}
+function addCuteProperty(obj) {
+  obj.cute=true;
+  return obj;
+}
 
 /**
  *
@@ -126,7 +129,10 @@ function addCuteProperty() {}
  *   }
  *
  */
-function addInputtedProperty() {}
+function addInputtedProperty(obj, key, value) {
+  obj[key]=value;
+  return obj;
+}
 
 /**
  *
@@ -160,7 +166,10 @@ function addInputtedProperty() {}
  *   }
  *
  */
-function addAnyProperty() {}
+function addAnyProperty(obj) {
+  obj.anyKey = "anyValue";
+  return obj;
+}
 
 module.exports = {
   addCuteProperty,
